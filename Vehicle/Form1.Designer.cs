@@ -28,11 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.StartBt = new System.Windows.Forms.Button();
             this.Bicycle = new System.Windows.Forms.PictureBox();
             this.Plane = new System.Windows.Forms.PictureBox();
             this.Toyata = new System.Windows.Forms.PictureBox();
             this.Bmw = new System.Windows.Forms.PictureBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.TextBox = new System.Windows.Forms.TextBox();
+            this.Bt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Bicycle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Plane)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Toyata)).BeginInit();
@@ -90,11 +94,36 @@
             this.Bmw.TabStop = false;
             this.Bmw.Click += new System.EventHandler(this.Bmw_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // TextBox
+            // 
+            this.TextBox.Location = new System.Drawing.Point(436, 228);
+            this.TextBox.Name = "TextBox";
+            this.TextBox.Size = new System.Drawing.Size(143, 20);
+            this.TextBox.TabIndex = 6;
+            this.TextBox.TextChanged += new System.EventHandler(this.TextBox_TextChanged);
+            // 
+            // Bt
+            // 
+            this.Bt.Location = new System.Drawing.Point(430, 176);
+            this.Bt.Name = "Bt";
+            this.Bt.Size = new System.Drawing.Size(68, 40);
+            this.Bt.TabIndex = 7;
+            this.Bt.Text = "Bt";
+            this.Bt.UseVisualStyleBackColor = true;
+            this.Bt.Click += new System.EventHandler(this.Bt_Click);
+            // 
             // Vehicle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 501);
+            this.Controls.Add(this.Bt);
+            this.Controls.Add(this.TextBox);
             this.Controls.Add(this.StartBt);
             this.Controls.Add(this.Bicycle);
             this.Controls.Add(this.Plane);
@@ -107,6 +136,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Toyata)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bmw)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -117,6 +147,9 @@
         private System.Windows.Forms.PictureBox Plane;
         private System.Windows.Forms.PictureBox Bicycle;
         private System.Windows.Forms.Button StartBt;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.TextBox TextBox;
+        private System.Windows.Forms.Button Bt;
     }
 }
 

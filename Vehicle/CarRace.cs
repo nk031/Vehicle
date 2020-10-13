@@ -8,7 +8,19 @@ namespace Vehicle
 {
     public class CarRace
     {
-      
+        public string CarColor;
+        public int Doors;
+
+        public void Paint(string coloroption)
+        {
+            CarColor = coloroption;
+        }
+        public int IncreaseDoors()
+        {
+           Doors++;
+            return Doors;
+           
+        }
 
 
 

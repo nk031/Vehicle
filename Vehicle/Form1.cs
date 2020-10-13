@@ -15,6 +15,7 @@ namespace Vehicle
     {
         Random rand = new Random();
         CarRace Class = new CarRace();
+        CarRace Bmw = new CarRace();
         public Vehicle()
         {
             InitializeComponent();
@@ -62,6 +63,17 @@ namespace Vehicle
         private void Bmw_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void TextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Bt_Click(object sender, EventArgs e)
+        {
+
+            TextBox.Text = Convert.ToString(Bmw.IncreaseDoors());
         }
     }
     }
